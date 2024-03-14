@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-} /*16px*/
-
 :root {
   /* colors */
   --primary-100: #fef3c7;
@@ -126,11 +122,7 @@ ul {
   padding: 0;
 }
 
-.img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
+
 /* buttons */
 
 .btn {
@@ -276,6 +268,7 @@ ul {
 .menu-item {
   background: var(--white);
   border-radius: var(--borderRadius);
+  
 }
 .menu-item .img {
   height: 15rem;
@@ -296,25 +289,59 @@ ul {
 .item-info h5 {
   font-weight: 500;
 }
-.item-price {
-  background: var(--primary-500);
-  color: var(--white);
-  padding: 0.25rem 0.5rem;
-  letter-spacing: var(--letterSpacing);
-  border-radius: var(--borderRadius);
-}
 
-.item-text {
-  line-height: 2;
-  color: var(--grey-500);
-}
+
 
 .section-center {
   justify-items: center;
 }
-.menu-item {
-  max-width: 25rem;
+
+.item-info{
+  background-color: wheat;
+
+  height: 10.93rem;
+
+  
+  
+ 
 }
+
+
+
+.item-img{
+  width: 100%;
+  height: 10rem;
+
+
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+
+  grid-column-gap: 1rem;
+  row-gap: 1rem;
+
+ 
+ 
+
+}
+
+.filter-btn {
+  background: var(--primary-500);
+  color: var(--white);
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  border: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+
+
+
 
 @media screen and (min-width: 992px) {
   .section-center {
