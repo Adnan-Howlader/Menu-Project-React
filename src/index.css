@@ -343,11 +343,13 @@ ul {
 
 
 
-@media screen and (min-width: 992px) {
-  .section-center {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
+@media screen and (max-width: 550px) {
+   .item-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   }
 }
 @media screen and (min-width: 1170px) {
   .section-center {
